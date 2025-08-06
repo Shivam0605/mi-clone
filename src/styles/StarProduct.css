@@ -1,0 +1,41 @@
+.starProductRow {
+  display: flex;
+  justify-content: center;       /* center the entire row */
+  align-items: center;           /* vertically align cards */
+  gap: 2rem;                     /* space between cards */
+  padding: 2rem;
+  flex-wrap: wrap;               /* stack on smaller screens */
+}
+
+.productCard {
+  width: 220px;
+  height: 280px;
+  background: rgba(240, 240, 240, 0);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;           /* center image vertically */
+  justify-content: center;       /* center image horizontally */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(36, 35, 35, 0.1);
+  text-decoration: none;
+}
+
+.productCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(51, 50, 50, 0.425);
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;      /* center image horizontally */
+  align-items: center;          /* center image vertically */
+}
+
+.imageWrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;           /* show full image, maintain aspect ratio */
+}
